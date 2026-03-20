@@ -54,9 +54,10 @@ function buildNoteDetailUrl(noteId?: string): string {
 
 function formatPostTime(ts?: number): string {
   if (!ts) return '';
-  const date = new Date(ts);
+  // XHS API timestamps are Beijing time (UTC+8)
+  const date = new Date(ts + 8 * 3600_000);
   const pad = (value: number) => String(value).padStart(2, '0');
-  return `${date.getFullYear()}年${pad(date.getMonth() + 1)}月${pad(date.getDate())}日 ${pad(date.getHours())}:${pad(date.getMinutes())}`;
+  return `${date.getUTCFullYear()}年${pad(date.getUTCMonth() + 1)}月${pad(date.getUTCDate())}日 ${pad(date.getUTCHours())}:${pad(date.getUTCMinutes())}`;
 }
 
 export function parseCreatorNotesText(bodyText: string): CreatorNoteRow[] {
