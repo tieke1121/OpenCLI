@@ -55,6 +55,7 @@ opencli bilibili [Tab] # 补全命令（hot、search、me、download...）
 
 ## 下一步
 
+- [内置命令详解](/zh/guide/builtin-commands)
 - [安装详情](/zh/guide/installation)
 - [Browser Bridge 设置](/zh/guide/browser-bridge)
 - [所有适配器](/zh/adapters/)

@@ -189,6 +189,7 @@ export default defineConfig({
               items: [
                 { text: '快速开始', link: '/zh/guide/getting-started' },
                 { text: '安装', link: '/zh/guide/installation' },
+                { text: '内置命令详解', link: '/zh/guide/builtin-commands' },
                 { text: 'Browser Bridge', link: '/zh/guide/browser-bridge' },
                 { text: '给新 Electron 应用生成 CLI', link: '/zh/guide/electron-app-cli' },
                 { text: '插件', link: '/zh/guide/plugins' },
